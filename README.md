@@ -1,3 +1,1 @@
-# samuelson
-
-Welcome to samuelson
+# Samuelson

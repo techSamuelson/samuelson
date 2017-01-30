@@ -1,0 +1,33 @@
+{
+  "name": "ssk",
+  "version": "0.1.0",
+  "description": "Web development starter kit",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-surge": "^0.1.0",
+    "gulp-util": "^3.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techSamuelson/SSK.git"
+  },
+  "author": "samuelson <tech.samuelson@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techSamuelson/SSK/issues"
+  },
+  "homepage": "https://github.com/techSamuelson/SSK#readme"
+}
