@@ -69,7 +69,7 @@ jQuery(document).ready(function($){
 	function hideWord($word) {
 		var nextWord = takeNext($word);
 		
-		if($word.parents('.box-headline').hasClass('type')) {
+		if($word.parents('.headline').hasClass('type')) {
 			var parentSpan = $word.parent('.word-wrap');
 			parentSpan.addClass('selected').removeClass('waiting');	
 			setTimeout(function(){ 

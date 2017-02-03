@@ -1,38 +1,4 @@
 @charset "UTF-8";
-html,
-body {
-  height: 100%;
-  line-height: 1.8;
-  color: #222;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.no-padding {
-  padding-left: 0;
-  padding-right: 0; }
-
-.center {
-  text-align: center; }
-
-a {
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s; }
-
-.h-30 {
-  height: 30px; }
-
-.h-10 {
-  height: 10px; }
-
-.color {
-  color: #222;
-  font-size: 11px; }
-
-h1 {
-  font-size: 5em;
-  font-weight: bold;
-  text-transform: uppercase; }
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -872,6 +838,40 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+html,
+body {
+  height: 100%;
+  line-height: 1.8;
+  color: #555;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.center {
+  text-align: center; }
+
+a {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s; }
+
+.h-30 {
+  height: 30px; }
+
+.h-10 {
+  height: 10px; }
+
+.color {
+  color: #222;
+  font-size: 11px; }
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
 /* Device View Notification */
 .notification {
   display: none;
@@ -912,7 +912,7 @@ there.
     font-weight: bold;
     text-align: center;
     color: #fff; }
-  @media (max-width: 300px) {
+  @media (max-width: 339px) {
     .notification {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1119,6 +1119,130 @@ there.
   padding: 150px 0 0; }
   .main-nav li {
     font-size: 18px; }
+
+.intro {
+  text-align: center;
+  display: table;
+  height: 100vh;
+  width: 100vw; }
+  .intro em {
+    font-style: normal;
+    text-transform: uppercase; }
+  .intro h5 {
+    font-size: 1em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #444; }
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+  .table-cell .word-wrap {
+    display: inline-block;
+    position: relative;
+    text-align: left; }
+    .table-cell .word-wrap b {
+      display: inline-block;
+      position: absolute;
+      white-space: nowwrap;
+      left: 0;
+      top: 0; }
+      .table-cell .word-wrap b.is-visible {
+        position: relative; }
+
+.no-js .word-wrap b {
+  opacity: 0; }
+  .no-js .word-wrap b.is-visible {
+    opacity: 1; }
+
+.headline {
+  font-size: 3em;
+  margin: 0 auto; }
+
+@media (max-with: 470px) {
+  .headline {
+    font-size: 2em; }
+  .intro h5 {
+    text-align: justify; } }
+
+.headline.slide span {
+  display: inline-block;
+  padding: .2em 0; }
+
+.headline.slide .word-wrap {
+  overflow: hidden;
+  vertical-align: top; }
+
+.headline.slide b {
+  opacity: 0;
+  top: .2em; }
+
+.headline.slide b.is-visible {
+  top: 0;
+  opacity: 1;
+  -webkit-animation: slide-in 0.6s;
+  animation: slide-in 0.6s; }
+
+.headline.slide b.is-hidden {
+  -webkit-animation: slide-out 0.6s;
+  animation: slide-out 0.6s; }
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
+
+@-webkit-keyframes slide-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0); }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(120%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%); } }
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(120%);
+    -ms-transform: translateY(120%);
+    transform: translateY(120%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%); } }
 
 footer {
   padding: 30px 0;

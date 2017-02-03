@@ -16,7 +16,7 @@ const reload = browserSync.reload;
 //          Compile SASS Files           //
 //=======================================//
 gulp.task('sass', function(){
-  return gulp.src('app/src/sass/main.sass')
+  return gulp.src('app/src/sass/**/main.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 15 versions'],
@@ -63,7 +63,7 @@ gulp.task('browser-sync', ['sass', 'pug'], function(){
 
 gulp.task('watch', function(){
   gulp.watch('app/src/sass/**/*.sass', ['sass']);
-  gulp.watch('app/_pugfiles/*.pug', ['pug']);
+  gulp.watch('app/**/*.pug', ['pug']);
   gulp.watch('app/*.html').on('change', reload);
 });
 

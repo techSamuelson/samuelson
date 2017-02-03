@@ -1,0 +1,56 @@
+.intro
+  text-align: center
+  display: table
+  height: 100vh
+  width: 100vw
+
+  em
+    font-style: normal
+    text-transform: uppercase
+  
+  h5
+    font-size: 1em
+    letter-spacing: 0.25em
+    text-transform: uppercase
+    line-height: 1.2
+    color: #444
+
+.table-cell
+  display: table-cell
+  vertical-align: middle
+
+  .word-wrap
+    display: inline-block
+    position: relative
+    text-align: left
+
+    b 
+      display: inline-block
+      position: absolute
+      white-space: nowwrap
+      left: 0
+      top: 0
+
+      &.is-visible
+        position: relative
+
+.no-js
+  .word-wrap
+    b
+      opacity: 0
+      
+      &.is-visible
+        opacity: 1
+
+.headline
+  font-size: 3em
+  margin: 0 auto
+
+@media (max-with: 470px)
+  .headline
+    font-size: 2em
+  
+  .intro
+    h5
+      text-align: justify
+@import 'slide'
